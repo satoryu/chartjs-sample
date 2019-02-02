@@ -1,0 +1,23 @@
+language: node_js
+
+cache: npm
+
+node_js:
+  - 10.6.0
+
+script:
+  - npm run-script prod
+
+after_script:
+  - mkdir doc
+  - mv index.html doc/
+  - mv dist doc/
+
+deploy:
+  provider: pages
+  local-dir: doc
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
