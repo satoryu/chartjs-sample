@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "webpack --config ./webpack.dev.js"
+    "dev": "webpack --config ./webpack.dev.js",
+    "prod": "webpack --mode production --config ./webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
