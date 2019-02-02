@@ -1,5 +1,7 @@
 # Chart.js Sample
 
+[![Build Status](https://travis-ci.org/satoryu/chartjs-sample.svg?branch=master)](https://travis-ci.org/satoryu/chartjs-sample)
+
 ## Prerequisites
 
 - Node.js
