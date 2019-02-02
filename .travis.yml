@@ -8,7 +8,7 @@ node_js:
 script:
   - npm run-script prod
 
-after_script:
+after_success:
   - mkdir doc
   - mv index.html doc/
   - mv dist doc/
