@@ -1,4 +1,5 @@
 import Chart from 'chart.js';
+import 'chartjs-plugin-colorschemes';
 import _ from 'lodash';
 
 function loadChart() {
@@ -15,6 +16,13 @@ function loadChart() {
                     data: data
                 }
             ]
+        },
+        options: {
+            plugins: {
+                colorschemes: {
+                    scheme: 'brewer.Paired12'
+                }
+            }
         }
     })
 }
