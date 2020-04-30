@@ -10,9 +10,10 @@ script:
 
 deploy:
   provider: pages
-  local-dir: dist
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  keep-history: true
+  strategy: git
+  local_dir: dist
+  cleanup: true
+  token: $GITHUB_TOKEN
+  keep_history: true
   on:
     branch: master
